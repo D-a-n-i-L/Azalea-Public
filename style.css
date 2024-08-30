@@ -16,6 +16,18 @@
   font-size: var(--fz-normal);
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative
+}
+
 body {
   font-family: var(--ff-primary);
+}
+
+.bg {
+  z-index: -1;
 }
