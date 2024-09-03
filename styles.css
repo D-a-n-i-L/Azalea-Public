@@ -10,8 +10,12 @@
     'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'
 );
 
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .header {
-    padding: 80%;
+    padding: 80px;
     text-align: center;
     background: #ed71e1;
     color: aliceblue;
@@ -63,4 +67,40 @@
     flex: 70%;
     background-color: white;
     padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ed71e1;
+}
+
+.navbar button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up {
+    float: right;
+}
+
+.log-in {
+    float: right;
 }
