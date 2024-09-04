@@ -14,7 +14,28 @@
             <div class="loginheader">
                 <span>login</span>
             </div>
-            
+            <div class="input_box">
+                <input type="text" id="user" class="input-field" required>
+                <label for="user" class="label">Username</label>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input_box">
+                <input type="password" id="pass" class="input-field" required>
+                <label for="pass" class="label">Password</label>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="remember-forget">
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+            </div>
+            <div class="forgot">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="btn">
+                <button type="submit" class="login-btn" onclick="login()">Login</button>
+            </div>
         </div>
     </div>
 </body>
