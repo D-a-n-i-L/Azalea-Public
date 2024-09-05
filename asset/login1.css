@@ -43,6 +43,12 @@ body {
     font-family: 'Beaufort', cursive;
 }
 
+button[id="login-button"] {
+    font-size: 20px;
+    font-family: 'Beaufort', cursive;
+    text-align: center;
+}
+
 .login-form button:hover {
     padding: 10px 20px;
     cursor: pointer;
@@ -55,10 +61,12 @@ body {
 
 input[type="text"],
 input[type="password"] {
+    text-align: center;
     width: 100%;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     background-color: transparent;
+    color: lightgoldenrodyellow;
     margin: 8px 0;
     display: inline-block;
     border: 3px solid #ccc;
@@ -97,4 +105,62 @@ a[href="/signup"]:hover {
     border-style: solid;
     background-color: aquamarine;
     color: black;
+}
+
+a[href="/signup"]:active {
+    border-style: solid;
+    background-color: aquamarine;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .login-form {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .login-form {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.login-form button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fade-in 5s ease-in-out;
+}
+
+@keyframes fade-in-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

@@ -26,7 +26,8 @@ loginForm.dispatchEvent(new Event('submit', { bubbles: true }));
 // Assert
 expect(errorMessageElement.textContent).toBe('');
 expect(getCookie('username')).toBe('special_user@123');
-expect(window.location.href).toBe('your_desired_page.html');// Unit test for handling multiple simultaneous login attempts from different users
+expect(window.location.href).toBe('your_desired_page.html');
+// Unit test for handling multiple simultaneous login attempts from different users
 
 // Arrange
 const usernameInput1 = document.createElement('input');

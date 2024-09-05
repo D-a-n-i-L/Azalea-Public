@@ -14,7 +14,7 @@
                 <input type="text" id="username" name="username" required>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit" id="login-button">Log in</button>
+                <button type="submit" id="login-button">Login</button>
                 <p>Don't have an account? <a href="/signup">Sign up</a></p>
             </form>
         </div>

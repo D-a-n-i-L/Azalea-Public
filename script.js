@@ -1,3 +1,11 @@
+/**
+ * Sets a cookie with the given name and value. If days is specified, sets the
+ * cookie to expire after the given number of days.
+ *
+ * @param {string} name - The name of the cookie.
+ * @param {string} value - The value of the cookie.
+ * @param {number} [days] - The number of days until the cookie expires.
+ */
 function setCookie(name, value, days) {
     var expires = "";
     if (days) {
@@ -53,6 +61,11 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
 
+/**
+ * Returns the value of the cookie with the given name, or null if no such cookie exists
+ * @param {string} name
+ * @returns {string|null}
+ */
 function getCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
