@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Azalea Login and Sign Up</h1>
         <div class="form-container">
             <form class="login-form" id="login-form">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit" id="login-button">Login</button>
+                <button type="submit" id="login-button">Log in</button>
+                <p>Don't have an account? <a href="/signup">Sign up</a></p>
             </form>
         </div>
     </div>
