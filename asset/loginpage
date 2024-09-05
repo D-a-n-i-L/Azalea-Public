@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/asset/styles.css">
     <title>Login Page</title>
 </head>
 <body>
-    
     <div class="wrapper">
         <div class="loginbox">
             <div class="loginheader">
@@ -25,17 +24,21 @@
                 <i class='bx bx-lock-alt'></i>
             </div>
             <div class="remember-forget">
-                <div class="remember">
+                <div class="remember-me">
                     <input type="checkbox" id="remember">
-                    <label for="remember">Remember me</label>
+                    <label for="remember"> Remember me</label>
                 </div>
             </div>
             <div class="forgot">
                 <a href="#">Forgot Password?</a>
             </div>
-            <div class="btn">
-                <button type="submit" class="login-btn" onclick="login()">Login</button>
+            <div class="input_box">
+                <div type="submit" class="input-submit" value="Login"> </div>
+            </div>
+            <div class="register">
+                <span>Don't have an account? <a href="#">Register</a></span>
             </div>
         </div>
     </div>
 </body>
+</html>
