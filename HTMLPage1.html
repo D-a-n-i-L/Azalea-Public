@@ -31,35 +31,6 @@
     <title>Azalea</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-
-        function setCookie(name, value, days) {
-            var expires = "";
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + (value || "") + expires + "; path=/";
-        }
-    
-        function getCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
-    
-        if (getCookie("username") === null) {
-            setCookie("username", "Guest", 30);
-        }
-    </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
@@ -166,7 +137,7 @@
             <a href="#">link</a>
             <a href="#">link</a>
             <a href="#">link</a>
-            <a href="/asset/login" class="right" style="animation: blink 2s linear infinite;">login/sign up</a>
+            <a href="login" class="right" style="animation: blink 2s linear infinite;">login/sign up</a>
             <style>
                 @keyframes blink {
                     0% {
