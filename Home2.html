@@ -40,6 +40,63 @@
             margin-right: 20px;
         }
 
+        .sidebar h2 {
+            background-color: lightgreen;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul:hover {
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: lightgreen;
+        }
+
+        .sidebar ul li.active {
+            background-color: lightgreen;
+        }
+
+        .sidebar ul li.active a {
+            color: #333;
+        }
+
+        .sidebar ul li.dropdown {
+            position: flex;
+        }
+
+        .sidebar ul li.dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
         .content {
             flex: 3;
             background-color: #fff;
@@ -50,6 +107,8 @@
             background-position: center;
             color: #ffffff;
         }
+
+        
 
         .footer {
             background-color: #333;
@@ -75,9 +134,9 @@
                 <!-- Sidebar content goes here -->
                 <h2>Menu</h2>
                 <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="Home" style="background-color: chartreuse; text-decoration: none; padding: 2px 5px; border-radius: 5px;">Home</a></li>
+                    <li><a href="about" style="background-color: chartreuse; text-decoration: none; padding: 2px 5px; border-radius: 5px;">About</a></li>
+                    <li><a href="contact" style="background-color: chartreuse; text-decoration: none; padding: 2px 5px; border-radius: 5px;">Contact</a></li>
                 </ul>
                 <hr>
                 <h2>Recent Activity</h2>
@@ -94,8 +153,15 @@
                 <p>This is a simple web application for managing azalea program.</p>
                 <p>Please note that this is a hypothetical example and the actual implementation may vary.</p>
                 <p>Created by Azalea</p>
-                <a href="https://github.com/D-a-n-i-L">View on GitHub</a>
-
+                <a href="https://github.com/D-a-n-i-L" 
+                style="color: #fff; 
+                text-transform: uppercase; 
+                text-decoration: none; 
+                font-weight: bold; 
+                background-color: #333; 
+                padding: 10px 20px; 
+                border-radius: 5px;">View on GitHub
+                </a>
                 <h2>Features</h2>
                 <ul>
                     <li>Authentication and authorization</li>
