@@ -1,21 +1,22 @@
-<!doctype html>
-<html lang=en>
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset=utf-8>
-    <title>Azalea Login and Sign Up</title>
-    <link rel=stylesheet href=/asset/login1.css>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="/asset/stylelogin.css">
 </head>
 <body>
-    <div class=container>
-        <form class=login-form id=login-form>
-            <label for=username>Username</label>
-            <input type=text id=username name=username required autofocus>
-            <label for=password>Password</label>
-            <input type=password id=password name=password required>
-            <button type=submit id=login-button>Login</button>
-            <p>Don't have an account? <a href=/signup>Sign up</a></p>
-        </form>
+  <div class="container">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#">Sign up</a></p>
     </div>
-    <script src=script.js defer></script>
+  </div>
+
+  <script src="/asset/login.js"></script>
 </body>
 </html>
